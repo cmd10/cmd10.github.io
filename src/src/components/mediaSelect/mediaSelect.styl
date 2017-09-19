@@ -1,0 +1,156 @@
+.mediaSelectPage
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: -webkit-fill-available;
+  max-width: 800px;
+  .mediaSelectWrap
+    position absolute
+    margin:0 auto;
+    width 100%
+    max-width 800px
+    height calc(100% - 49.5px)
+    background-color: rgb(220, 220, 220);
+    z-index 11
+    .mediaSelectInput
+      position absolute
+      left 5%
+      width 90%
+      top 10px
+      white-space:nowrap
+      overflow: hidden
+      color white
+      text-overflow: ellipsis
+      z-index 11
+
+    .videoBackGround
+      position absolute
+      z-index 12
+      left 0
+      width 100%
+      height 55%
+      background-color black
+      display table
+      .mediaSelectVideoPlayCtrl
+        top: 44%;
+        left: 44%;
+        position: absolute;
+        width: 12%;
+        z-index: 14;
+      .mediaSelectVideo
+        position absolute
+        z-index 12
+        left 0
+        width 100%
+        height 100%
+        object-fit contain
+      .mediaSelectVideoNote
+        position: absolute;
+        z-index: 13;
+        left: 0;
+        top: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        color: #fff;
+    .videoDesc
+      position absolute
+      z-index 12
+      top 55%
+      left 0
+      width 100%
+      height 25%
+      background-color white
+      .videoDescCover
+        position absolute
+        width 30%
+        left 5px
+        top 5px
+        height calc(100% - 10px)
+      .videoDescTitle
+        display flex
+        position absolute
+        left calc(30% + 10px)
+        z-index 12
+        width calc(70% - 10px)
+        height 100%
+
+    .videoShare
+      position absolute
+      top 80%
+      height 40px
+      width 100%
+      .videoShareText
+        position: relative;
+        float: left;
+        left: 5%;
+        top: 30%;
+      .videoShareTwitte
+        position relative
+        float left
+        margin-left 5%
+        top 12.5%
+        height 75%
+      .videoShareDiscover
+        position relative
+        float left
+        margin-left 5%
+        top 12.5%
+        height 75%
+      .videoShareQQSpace
+        position relative
+        float left
+        margin-left 5%
+        top 12.5%
+        height 75%
+      .videoShareFaceBook
+        position relative
+        float left
+        margin-left 5%
+        top 12.5%
+        height 75%
+      .videoShareWeibo
+        position relative
+        float left
+        margin-left 5%
+        top 12.5%
+        height 75%
+
+
+    .uploadingPage
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index 18
+      width: 100%
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity .3s ease;
+      text-align center
+      .uploadingImg
+        position relative
+        top calc((100% - 100px) / 2)
+        height 100px
+        margin: 0 auto 0 auto
+        animation: loadingRotate 1s infinite
+
+    .mediaSelectUpLoad
+      position absolute
+      left 25%
+      width 50%
+      height 30px
+      bottom 20px
+      background-color rgb(80, 200, 240)
+      border-radius:25px;
+
+@keyframes loadingRotate {
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(360deg)
+  }
+}

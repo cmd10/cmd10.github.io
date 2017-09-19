@@ -1,0 +1,105 @@
+.modal-mask
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+
+  .modal-wrapper
+    text-align: center;
+    position relative
+    display: table-cell;
+    vertical-align: middle;
+    horiz-align: center;
+
+  .modal-container
+    position relative
+    width: 40%
+    height: 30%
+    min-height 72px
+    margin: 0px auto;
+    padding: 40px 60px;
+    background-color: #0DD0F2 //#03a9f4;
+    border-radius: 5px;
+    //box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+
+
+  .modal-user
+    top 15%
+    width 70%
+    left 15%
+    right 20%
+    position absolute
+    //color: #42b983;
+
+
+  .modal-passwd
+    top 35%
+    width 70%
+    left 15%
+    right 20%
+    position absolute
+    margin-top 20px
+
+
+  .modal-confirm
+    bottom 25%
+    width 30%
+    left 35%
+    right 35%
+    position absolute
+    margin-top 20px
+    border-radius: 5px;
+    float: middle;
+
+  button
+    left 0
+    right 0
+    text-align:left
+    position absolute
+    width 100%
+    border-radius: 5px;
+    border 2px solid white
+    text-align center
+    size 20
+
+
+  input
+    left 0
+    right 0
+    text-align:left
+    position absolute
+    width 100%
+    border-radius: 5px;
+    border 2px solid white
+    size 20
+
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+  .modal-enter
+    opacity: 0;
+  .closeLogin
+    margin-top 10px
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

@@ -1,0 +1,59 @@
+.commentPage
+  position relative
+  width: 100%
+  border: 0.5px inset #fcfcfc;
+  column-break-inside: avoid;
+  z-index: 11
+  height: 100%
+  .commentWrap
+    position relative
+    width: 100%
+    min-height 60px
+    height auto
+    max-height 80px
+    background-color aliceblue
+    .commentInfo
+      position: absolute
+      width: 100%
+      height: 70%
+      z-index: 11
+      -webkit-user-select:none
+      -webkit-touch-callout:none
+      display inline-block
+      vertical-align middle
+      .commentInfoPhoto
+        position relative
+        top 7.5%
+        left 1%
+        height 85%
+        bottom 15%
+        border-radius 50%
+      .commentInfoName
+        top 15%
+        position absolute
+        left calc(1% + 35px)
+        font-size small
+      .commentInfoTime
+        position absolute
+        left calc(1% + 35px)
+        font-size small
+        bottom 20%
+      .commentInfoVotePic
+        top 20%
+        vertical-align middle
+        position relative
+        float right
+        margin-right 5px
+      .commentInfoVoteNum
+        top 30%
+        height 70%
+        vertical-align middle
+        position relative
+        margin-right 5%
+        float right
+    .commentCotent
+       position absolute
+       left calc(1% + 35px)
+       top  71%
+
+

@@ -1,0 +1,270 @@
+.videoDetailPage
+  display flex
+  top 0
+  width 100%
+  height 100%
+  z-index 14
+  background-color white
+  .videoDetailWrap
+    position fixed !important
+    top 0
+    width 100%
+    height 41%
+    z-index 15
+    background-color #2b333f
+    .videoDetailTop
+      top 5%
+      left 0
+      position  absolute
+      width 100%
+      height 30px
+      z-index 2
+      .videoDetailBack
+        position absolute
+        height auto
+        width auto
+        left 2%
+      .videoDetailVoteDesc
+        position absolute
+        height 100%
+        width 60%
+        right 5%
+        display inline-block
+        .videoDetailVotePic
+          position: relative
+          width: auto
+          height: 60%
+          bottom: 0
+          float right
+        .videoDetailVoteNum
+          position: relative
+          width: auto
+          height: 100%
+          bottom: 0
+          color: white
+          float right
+    .videoDetailPlayCtrl
+      top: 44%;
+      left: 44%;
+      position: absolute;
+      width: 12%;
+      z-index: 2;
+    .videoDetailLoadingShow
+      top: 44%;
+      left: 44%;
+      position: absolute;
+      width: 12%;
+      z-index: 2;
+      animation: loadingRotate 1s infinite
+    .videoDetailVideo
+      z-index 1
+      position  absolute
+      left 0
+      right 0
+      width 100%
+      height 100%
+    .videoDetailBottom
+      z-index 2
+      width 100%
+      height 38px
+      position absolute
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), color-stop(0.01, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); // rgba(0, 0, 0, 0.0);
+      bottom 0
+      .videoDetailBottomCtrls
+        float right
+        top 0
+        width 50%
+        height 100%
+        position relative
+        .videoDetailScreenCtrl
+          float right
+          top 20%
+          height 65%
+          right 2%
+          position relative
+        .videoDetailShare
+          float: right
+          top 15%
+          height 70%
+          position relative
+          margin-right 3%
+        .videoDetailMessage
+          height 70%
+          top 15%
+          float:right
+          position relative
+          margin-right 3%
+        .videoDetailVote
+          top 15%
+          height 70%
+          float:right;
+          position relative
+          margin-right 3%
+        .videoDetailBarageCtrl
+          top 15%
+          height 70%
+          float:right;
+          position relative
+          margin-right 3%
+      .videoDetailBottomProgress
+        float left
+        top 0
+        width 50%
+        height 100%
+        position relative
+        .videoDetailBottomLoadingTotalTime
+          text-align center
+          color white
+          top 32.5%
+          width 15%
+          height auto
+          float:left;
+          position relative
+          margin-left 1%
+        .videoDetailBottomLoadingBarWrap
+          display inline-block
+          float: left
+          top: 45%
+          width 60%
+          height: 10%
+          background-color gray
+          margin-left 1%
+          position relative
+          .videoDetailBottomLoadingBar
+            background-color: #03a9f4;
+            height: 100%;
+            position: absolute;
+        .videoDetailBottomLoadingCurrTime
+          text-align center
+          color white
+          width 15%
+          top 32.5%
+          height auto
+          float:left;
+          position relative
+          margin-left 2%
+
+    .videoDetailMsgCtrl
+      z-index 2
+      width 100%
+      height 45px
+      position absolute
+      background-color rgb(236, 236, 236);
+      align-items:center;//子元素垂直居中
+      display:-webkit-flex;
+      bottom 0
+      .videoDetailMsgCtrlBarrage
+        position: relative;
+        height: 60%;
+        left: 5px;
+      .videoDetailMsgCtrlInput
+        border-right-color: rgb(225, 225, 225);
+        border-right-style: solid;
+        border-right-width: 2px;
+        margin-left: 10px;
+        margin-right: 5px;
+        background-color: rgb(236, 236, 236);
+        border-left-color: rgb(225, 225, 225);
+        border-left-style: solid;
+        border-left-width: 2px;
+        position: relative;
+        width: -webkit-fill-available;
+        height: 70%;
+      .videoDetailMsgCtrlSend
+        position: relative;
+        height: 100%;
+        width: 15%;
+        background-color: rgb(236, 236, 236);
+        border: 0;
+  .videoDetailMiddle
+    position fixed
+    width 100%
+    top 41%
+    height 80px
+    z-index 15
+  .videoDetailMiddleDesc
+    position relative
+    height 40px
+    width 100%
+    background-color rgb(250, 250, 250)
+    align-items center
+    display -webkit-flex
+    .videoDetailMiddleDescPhoto
+      position: absolute
+      left 2%
+      top 12%
+      height 85%
+      border-radius 50%
+    .videoDetailMiddleDescTitle
+      width: 30%
+      height: 48%
+      left: calc(2% + 35px)
+      position: absolute
+      bottom: 0
+      font-size: x-small
+      color: black
+      white-space:nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .videoDetailMiddleDescAuthor
+      width:30%
+      height: 48%
+      left: calc(2% + 35px)
+      margin-right 2%
+      position: absolute
+      top: 3%
+      font-size: x-small
+      color: black
+      white-space:nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .videoDetailMiddleDescVoteDesc
+      position absolute
+      height 100%
+      width 30%
+      right 25%
+      .videoDetailMiddleDescVoteDescVotePic
+        position: relative
+        width: auto
+        height: 40%
+        top 30%
+        bottom: 0
+        float right
+        margin-right 2px
+      .videoDetailMiddleDescVoteDescVoteNum
+        position: relative
+        width: auto
+        height: 40%
+        top 30%
+        bottom: 0
+        color: black
+        float right
+    .videoDetailMiddleDescollow
+      position absolute
+      border-radius 25%
+      background-color mediumturquoise
+      border-color transparent
+      top 10%
+      bottom 10%
+      height 80%
+      width 20%
+      right 1%
+  .videoDetailMiddleDescNavBar
+    background-color white
+    position relative
+    width 100%
+  .videoDetailVideoDesc
+    position absolute
+    width 100%
+    top: calc(41% + 80px)
+    z-index 14
+    background-color aliceblue
+
+@keyframes loadingRotate {
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(360deg)
+  }
+}

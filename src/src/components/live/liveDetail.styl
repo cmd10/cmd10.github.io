@@ -1,0 +1,277 @@
+.liveDetailpage
+  display flex
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  z-index 14
+  background-color white
+  .liveDetailWrap
+    position  absolute
+    top 0
+    width 100%
+    height 41%
+    z-index 2
+    background-color #2b333f
+    vertical-align:bottom
+    .liveDetailWrapMsgList
+      position absolute
+      left 5px
+      bottom 50px
+      height 40%
+      width 50%
+      color: white
+      z-index 4
+      overflow: hidden;
+      overflow-y:scroll
+      overflow-x:hidden
+      .liveDetailWrapMsgItemNick
+        color: rgb(81, 201, 228)
+      .liveDetailWrapMsgItemMsg
+        font-size 14px
+    .liveDetailBack
+      position absolute
+      left 2%
+      top 3%
+      z-index 3
+    .liveDetailTop
+      top 3%
+      left 3%
+      right 3%
+      position  absolute
+      width 94%
+      height 30px
+      z-index 2
+      .liveDetailFullDesc
+        position absolute
+        height 100%
+        width 50%
+        left 0
+        top 0
+        vertical-align middle
+        background-color rgba(0,0,0, 0.25)
+        border-radius 25px
+        .liveDetailFullPhoto
+          left 0
+          top 0
+          height 100%
+          position absolute
+          border-radius 50%
+        .liveDetailFullId
+          width:50%
+          height: 48%
+          left: 32px
+          position: absolute
+          bottom: 0
+          font-size: x-small
+          color: white
+          white-space:nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        .liveDetailFullAuthor
+          width:50%
+          height: 48%
+          left: 32px
+          margin-right 2%
+          position: absolute
+          top: 1%
+          font-size: x-small
+          color: white
+          white-space:nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        .liveDetailFullFollow
+          position absolute
+          border-radius 25px
+          background-color mediumturquoise
+          border-color transparent
+          top 10%
+          bottom 10%
+          height 80%
+          right 3px
+    .liveDetailPlayCtrl
+      top: 44%;
+      left: 44%;
+      position: absolute;
+      width: 12%;
+      z-index: 2;
+    .liveDetailLoadingShow
+      top: 44%;
+      left: 44%;
+      position: absolute;
+      width: 12%;
+      z-index: 2;
+      animation: loadingRotate 1s infinite
+    .liveDetailVideo
+      z-index 1
+      position  absolute
+      top 0
+      left 0
+      right 0
+      height: 100%
+      width 100%
+      vertical-align middle
+    .liveDetailBottom
+      z-index 2
+      width 100%
+      height 50px
+      position absolute
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), color-stop(0.01, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); // rgba(0, 0, 0, 0.0);
+      bottom 0
+      .liveDetailBottomScreen
+        float: left
+        height 60%
+        position relative
+        left 3%
+        top 12%
+      .liveDetailBottomClose
+        float:right;
+        top 13%
+        position relative
+        bottom 8%
+        height 60%
+        margin-right 4%
+        border-radius 50%
+        border 2px solid rgb(190, 190, 190)
+      .liveDetailBottomWelfare
+        top 10%
+        height 70%
+        float:right;
+        position relative
+        margin-right 3%
+      .liveDetailBottomShare
+        top 10%
+        height 70%
+        float:right;
+        position relative
+        margin-right 3%
+      .liveDetailBottomMessage
+        top 10%
+        height 70%
+        float:right
+        position relative
+        margin-right 3%
+      .liveDetailBottomMail
+        top 10%
+        float: right
+        height 70%
+        position relative
+        margin-right 3%
+    .liveDetailMsgCtrl
+      z-index 2
+      width 100%
+      height 50px
+      position absolute
+      background-color rgb(236, 236, 236);
+      align-items:center;//子元素垂直居中
+      display:-webkit-flex;
+      bottom 0
+      .liveDetailMsgCtrlBarrage
+        position: relative;
+        height: 60%;
+        left: 5px;
+      .liveDetailMsgCtrlInput
+        border-right-color: rgb(225, 225, 225);
+        border-right-style: solid;
+        border-right-width: 2px;
+        margin-left: 10px;
+        margin-right: 5px;
+        background-color: rgb(236, 236, 236);
+        border-left-color: rgb(225, 225, 225);
+        border-left-style: solid;
+        border-left-width: 2px;
+        position: relative;
+        width: -webkit-fill-available;
+        height: 70%;
+      .liveDetailMsgCtrlSend
+        position: relative;
+        height: 100%;
+        width: 15%;
+        background-color: rgb(236, 236, 236);
+        border: 0;
+
+    .liveDetailControls
+      position absolute
+      width 100%
+      height 40px
+      bottom 0
+      z-index 3
+      color #ffffff
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), color-stop(0.01, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); // rgba(0, 0, 0, 0.0);
+      .liveDetailCus
+        position absolute
+        bottom 2px
+        left 2%
+        align-items:center;//子元素垂直居中
+      .liveDetailFullScreenCtrl
+        position absolute
+        bottom 2px
+        right 2px
+        height 60%
+  .liveDetailDesc
+    position absolute
+    width 100%
+    top 41%
+    left 0
+    bottom 0
+    background-color aliceblue
+    .liveDesc
+      position relative
+      height 40px
+      width 100%
+      background-color rgb(250, 250, 250)
+      align-items center
+      display -webkit-flex
+      .liveDescPhoto
+        position: absolute
+        left 2%
+        top 10%
+        height 80%
+        border-radius 50%
+      .liveDescTitle
+        width:50%
+        height: 48%
+        left: calc(35px + 2%)
+        position: absolute
+        bottom: 0
+        font-size: x-small
+        color: black
+        white-space:nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .liveDescAuthor
+        width:50%
+        height: 48%
+        left: calc(35px + 2%)
+        margin-right 2%
+        position: absolute
+        top: 1%
+        font-size: x-small
+        color: black
+        white-space:nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .liveDescFollow
+        position absolute
+        border-radius 25%
+        background-color mediumturquoise
+        border-color transparent
+        top 10%
+        bottom 10%
+        height 80%
+        right 2%
+    .liveDescNavBar
+      background-color white
+      position relative
+      width 100%
+
+@keyframes loadingRotate {
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(360deg)
+  }
+}
+.liveDetailWrapMsgList::-webkit-scrollbar {display:none}
